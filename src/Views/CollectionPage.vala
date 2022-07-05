@@ -870,7 +870,10 @@ public abstract class CollectionPage : MediaPage {
         flip_button.image = new Gtk.Image.from_icon_name (Resources.VFLIP, Gtk.IconSize.LARGE_TOOLBAR);
         flip_button.tooltip_text = Resources.VFLIP_TOOLTIP;
         rotate_button.image = new Gtk.Image.from_icon_name (Resources.COUNTERCLOCKWISE, Gtk.IconSize.LARGE_TOOLBAR);
-        rotate_button.tooltip_text = Resources.ROTATE_CCW_TOOLTIP;
+        rotate_button.tooltip_markup = Granite.markup_accel_tooltip (
+            { Resources.ROTATE_CCW_ACCEL },
+            Resources.ROTATE_CCW_TOOLTIP
+        );
         flip_button.clicked.disconnect (on_flip_horizontally);
         flip_button.clicked.connect (on_flip_vertically);
         rotate_button.clicked.disconnect (on_rotate_clockwise);
@@ -883,7 +886,11 @@ public abstract class CollectionPage : MediaPage {
         flip_button.image = new Gtk.Image.from_icon_name (Resources.HFLIP, Gtk.IconSize.LARGE_TOOLBAR);
         flip_button.tooltip_text = Resources.HFLIP_TOOLTIP;
         rotate_button.image = new Gtk.Image.from_icon_name (Resources.CLOCKWISE, Gtk.IconSize.LARGE_TOOLBAR);
-        rotate_button.tooltip_text = Resources.ROTATE_CW_TOOLTIP;
+        rotate_button.tooltip_markup = Granite.markup_accel_tooltip (
+            { Resources.ROTATE_CW_ACCEL },
+            Resources.ROTATE_CW_TOOLTIP
+        );
+
         flip_button.clicked.disconnect (on_flip_vertically);
         flip_button.clicked.connect (on_flip_horizontally);
         rotate_button.clicked.disconnect (on_rotate_counterclockwise);

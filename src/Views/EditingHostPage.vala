@@ -101,7 +101,10 @@ public abstract class EditingHostPage : SinglePhotoPage {
 
     protected override void add_toolbar_widgets (Gtk.ActionBar toolbar) {
         rotate_button = new Gtk.Button.from_icon_name ("object-rotate-right", Gtk.IconSize.LARGE_TOOLBAR);
-        rotate_button.tooltip_text = Resources.ROTATE_CW_TOOLTIP;
+        rotate_button.tooltip_markup = Granite.markup_accel_tooltip (
+            { Resources.ROTATE_CW_ACCEL },
+            Resources.ROTATE_CW_TOOLTIP
+        );
         rotate_button.clicked.connect (on_rotate_clockwise);
 
         flip_button = new Gtk.Button.from_icon_name ("object-flip-horizontal", Gtk.IconSize.LARGE_TOOLBAR);
@@ -1609,7 +1612,10 @@ public abstract class EditingHostPage : SinglePhotoPage {
 
     protected override bool on_ctrl_pressed (Gdk.EventKey? event) {
         rotate_button.image = (new Gtk.Image.from_icon_name ("object-rotate-left", Gtk.IconSize.LARGE_TOOLBAR));
-        rotate_button.set_tooltip_text (Resources.ROTATE_CCW_TOOLTIP);
+        rotate_button.tooltip_markup = Granite.markup_accel_tooltip (
+            { Resources.ROTATE_CCW_ACCEL },
+            Resources.ROTATE_CCW_TOOLTIP
+        );
         rotate_button.show_all ();
         rotate_button.clicked.disconnect (on_rotate_clockwise);
         rotate_button.clicked.connect (on_rotate_counterclockwise);
@@ -1627,7 +1633,10 @@ public abstract class EditingHostPage : SinglePhotoPage {
 
     protected override bool on_ctrl_released (Gdk.EventKey? event) {
         rotate_button.image = new Gtk.Image.from_icon_name ("object-rotate-right", Gtk.IconSize.LARGE_TOOLBAR);
-        rotate_button.set_tooltip_text (Resources.ROTATE_CW_TOOLTIP);
+        rotate_button.tooltip_markup = Granite.markup_accel_tooltip (
+            { Resources.ROTATE_CW_ACCEL },
+            Resources.ROTATE_CW_TOOLTIP
+        );
         rotate_button.show_all ();
         rotate_button.clicked.disconnect (on_rotate_counterclockwise);
         rotate_button.clicked.connect (on_rotate_clockwise);

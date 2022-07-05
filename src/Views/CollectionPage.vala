@@ -55,7 +55,10 @@ public abstract class CollectionPage : MediaPage {
         slideshow_button.clicked.connect (on_slideshow);
 
         rotate_button = new Gtk.Button.from_icon_name (Resources.CLOCKWISE, Gtk.IconSize.LARGE_TOOLBAR);
-        rotate_button.tooltip_text = Resources.ROTATE_CW_TOOLTIP; // Will be used be screen reader if no label
+        rotate_button.tooltip_markup = Granite.markup_accel_tooltip (
+            { Resources.ROTATE_CW_ACCEL },
+            Resources.ROTATE_CW_TOOLTIP
+        ); // Will be used be screen reader if no label
         rotate_button.clicked.connect (on_rotate_clockwise);
 
         var rotate_action = get_action ("RotateClockwise");

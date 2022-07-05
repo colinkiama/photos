@@ -85,12 +85,12 @@ public const string ICON_FLAGGED_PAGE = "edit-flag";
 public const string ROTATE_CW_MENU = _("Rotate _Right");
 public const string ROTATE_CW_FULL_LABEL = _("Rotate Right");
 public const string ROTATE_CW_TOOLTIP = _("Rotate the photos right (press Ctrl to rotate left)");
-public const string ROTATE_CW_ACCEL = "<Ctrl>bracketright";
+public const string ROTATE_CW_ACCEL = "bracketright";
 
 public const string ROTATE_CCW_MENU = _("Rotate _Left");
 public const string ROTATE_CCW_FULL_LABEL = _("Rotate Left");
 public const string ROTATE_CCW_TOOLTIP = _("Rotate the photos left");
-public const string ROTATE_CCW_ACCEL = "<Ctrl>bracketleft";
+public const string ROTATE_CCW_ACCEL = "bracketleft";
 
 public const string HFLIP_MENU = _("Flip Hori_zontally");
 public const string HFLIP_LABEL = _("Flip Horizontally");

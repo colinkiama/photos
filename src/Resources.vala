@@ -82,6 +82,9 @@ public const string ICON_VIDEOS_PAGE = "folder-videos";
 public const string ICON_RAW_PAGE = "camera-web";
 public const string ICON_FLAGGED_PAGE = "edit-flag";
 
+public const string SLIDESHOW_TOOLTIP = _("Play a slideshow");
+public const string SLIDESHOW_ACCEL = "F5";
+
 public const string ROTATE_CW_MENU = _("Rotate _Right");
 public const string ROTATE_CW_FULL_LABEL = _("Rotate Right");
 public const string ROTATE_CW_TOOLTIP = _("Rotate the photos right (press Ctrl to rotate left)");

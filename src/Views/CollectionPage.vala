@@ -51,7 +51,11 @@ public abstract class CollectionPage : MediaPage {
     public override void add_toolbar_widgets (Gtk.ActionBar toolbar) {
         var slideshow_button = new Gtk.Button.from_icon_name ("media-playback-start-symbolic",
                                                               Gtk.IconSize.LARGE_TOOLBAR);
-        slideshow_button.tooltip_text = _("Play a slideshow");
+        slideshow_button.tooltip_markup = Granite.markup_accel_tooltip (
+            { Resources.SLIDESHOW_ACCEL },
+            Resources.SLIDESHOW_TOOLTIP
+        );
+
         slideshow_button.clicked.connect (on_slideshow);
 
         rotate_button = new Gtk.Button.from_icon_name (Resources.CLOCKWISE, Gtk.IconSize.LARGE_TOOLBAR);

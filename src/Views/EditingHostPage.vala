@@ -129,12 +129,18 @@ public abstract class EditingHostPage : SinglePhotoPage {
 
         redeye_button = new Gtk.ToggleButton ();
         redeye_button.image = new Gtk.Image.from_icon_name ("image-red-eye", Gtk.IconSize.LARGE_TOOLBAR);
-        redeye_button.tooltip_text = Resources.RED_EYE_TOOLTIP;
+        redeye_button.tooltip_markup = Granite.markup_accel_tooltip (
+            { Resources.RED_EYE_ACCEL },
+            Resources.RED_EYE_TOOLTIP
+        );
         redeye_button.toggled.connect (on_redeye_toggled);
 
         adjust_button = new Gtk.ToggleButton ();
         adjust_button.image = new Gtk.Image.from_icon_name ("image-adjust", Gtk.IconSize.LARGE_TOOLBAR);
-        adjust_button.tooltip_text = Resources.ADJUST_TOOLTIP;
+        adjust_button.tooltip_markup = Granite.markup_accel_tooltip (
+            { Resources.ADJUST_ACCEL },
+            Resources.ADJUST_TOOLTIP
+        );
         adjust_button.toggled.connect (on_adjust_toggled);
 
         enhance_button = new Gtk.ToggleButton ();

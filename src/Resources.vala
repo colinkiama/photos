@@ -120,6 +120,7 @@ public const string CROP_ACCEL = "<Ctrl>O";
 
 public const string STRAIGHTEN_LABEL = _("Straighten");
 public const string STRAIGHTEN_TOOLTIP = _("Straighten the photo");
+public const string STRAIGHTEN_ACCEL = "<Ctrl>A";
 
 public const string RED_EYE_LABEL = _("Red-eye");
 public const string RED_EYE_TOOLTIP = _("Reduce or eliminate any red-eye effects in the photo");

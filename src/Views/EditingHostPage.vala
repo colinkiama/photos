@@ -121,7 +121,10 @@ public abstract class EditingHostPage : SinglePhotoPage {
 
         straighten_button = new Gtk.ToggleButton ();
         straighten_button.image = new Gtk.Image.from_icon_name ("object-straighten", Gtk.IconSize.LARGE_TOOLBAR);
-        straighten_button.tooltip_text = Resources.STRAIGHTEN_TOOLTIP;
+        straighten_button.tooltip_markup = Granite.markup_accel_tooltip ( 
+            { Resources.STRAIGHTEN_ACCEL },
+            Resources.STRAIGHTEN_TOOLTIP
+        );
         straighten_button.toggled.connect (on_straighten_toggled);
 
         redeye_button = new Gtk.ToggleButton ();

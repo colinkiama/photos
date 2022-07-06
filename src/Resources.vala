@@ -103,6 +103,7 @@ public const string VFLIP_TOOLTIP = _("Flip the image vertically");
 public const string ENHANCE_MENU = _("_Enhance");
 public const string ENHANCE_LABEL = _("Enhance");
 public const string ENHANCE_TOOLTIP = _("Automatically improve the photo's appearance \n(Overwrites previous color adjustments)");
+public const string ENHANCE_ACCEL = "<Ctrl>E";
 
 public const string UNENHANCE_MENU = _("Revert _Enhancement");
 public const string UNENHANCE_LABEL = _("Revert Enhancement");

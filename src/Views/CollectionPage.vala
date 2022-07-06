@@ -80,7 +80,10 @@ public abstract class CollectionPage : MediaPage {
 
         enhance_button = new Gtk.ToggleButton ();
         enhance_button.image = new Gtk.Image.from_icon_name (Resources.ENHANCE, Gtk.IconSize.LARGE_TOOLBAR);
-        enhance_button.tooltip_text = Resources.ENHANCE_TOOLTIP;
+        enhance_button.tooltip_markup = Granite.markup_accel_tooltip (
+            { Resources.ENHANCE_ACCEL },
+            Resources.ENHANCE_LABEL
+        );
         enhance_button.clicked.connect (on_enhance);
 
         var zoom_assembly = new SliderAssembly (Thumbnail.MIN_SCALE,

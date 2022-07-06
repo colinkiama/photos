@@ -52,7 +52,7 @@ public class SliderAssembly : Gtk.Grid {
         margin_bottom = 5;
 
         var decrease = new Gtk.Image.from_icon_name (Resources.ICON_ZOOM_OUT, Gtk.IconSize.MENU) {
-            tooltip_markup = Granite.markup_accel_tooltip ({"minus"}, _("Zoom Out"))
+            tooltip_markup = Granite.markup_accel_tooltip ({"<Ctrl>minus"}, _("Zoom Out"))
         };
         decrease_box = new Gtk.EventBox ();
         decrease_box.above_child = true;
@@ -84,7 +84,7 @@ public class SliderAssembly : Gtk.Grid {
         add (slider);
 
         var increase = new Gtk.Image.from_icon_name (Resources.ICON_ZOOM_IN, Gtk.IconSize.MENU) {
-            tooltip_markup = Granite.markup_accel_tooltip ({"plus"}, _("Zoom In"))
+            tooltip_markup = Granite.markup_accel_tooltip ({"<Ctrl>plus"}, _("Zoom In"))
         };
         increase_box = new Gtk.EventBox ();
         increase_box.above_child = true;

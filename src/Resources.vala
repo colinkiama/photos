@@ -136,7 +136,6 @@ public const string BEST_FIT_ACCEL = _("<Ctrl>0");
 public const string ACTUAL_SIZE_TOOLTIP = _("Zoom 1:1");
 public const string ACTUAL_SIZE_ACCEL = _("<Ctrl>1");
 
-// public const string MAX_SIZE_TOOLTIP = _("Maximum zoom");
 public const string MAX_SIZE_ACCEL = _("<Ctrl>2");
 
 public const string REVERT_MENU = _("Re_vert to Original");

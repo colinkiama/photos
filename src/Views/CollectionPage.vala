@@ -76,7 +76,10 @@ public abstract class CollectionPage : MediaPage {
         flip_action.bind_property ("sensitive", flip_button, "sensitive", BindingFlags.SYNC_CREATE);
 
         var publish_button = new Gtk.Button.from_icon_name (Resources.PUBLISH, Gtk.IconSize.LARGE_TOOLBAR);
-        publish_button.tooltip_text = Resources.PUBLISH_TOOLTIP;
+        publish_button.tooltip_markup = Granite.markup_accel_tooltip (
+            { Resources.PUBLISH_ACCEL },
+            Resources.PUBLISH_TOOLTIP
+        );
         publish_button.clicked.connect (on_publish);
 
         var publish_action = get_action ("Publish");

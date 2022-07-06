@@ -176,6 +176,7 @@ public const string PRINT_MENU = _("_Print…");
 
 public const string PUBLISH_MENU = _("Pu_blish…");
 public const string PUBLISH_TOOLTIP = _("Publish to various websites");
+public const string PUBLISH_ACCEL = "<Ctrl><Shift>p";
 
 public const string EDIT_TITLE_LABEL = _("Edit Title");
 

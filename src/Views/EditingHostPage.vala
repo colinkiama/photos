@@ -146,7 +146,10 @@ public abstract class EditingHostPage : SinglePhotoPage {
         enhance_button.clicked.connect (on_enhance);
 
         var zoom_fit = new Gtk.Button.from_icon_name ("zoom-fit-best-symbolic", Gtk.IconSize.MENU);
-        zoom_fit.tooltip_text = _("Zoom to fit page");
+        zoom_fit.tooltip_markup = Granite.markup_accel_tooltip (
+            { Resources.BEST_FIT_ACCEL },
+            Resources.BEST_FIT_TOOLTIP
+        );
         zoom_fit.valign = Gtk.Align.CENTER;
         zoom_fit.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
 
@@ -155,7 +158,10 @@ public abstract class EditingHostPage : SinglePhotoPage {
         zoom_fit.clicked.connect (() => zoom_fit_action.activate ());
 
         var zoom_original = new Gtk.Button.from_icon_name ("zoom-original-symbolic", Gtk.IconSize.MENU);
-        zoom_original.tooltip_text = _("Zoom 1:1");
+        zoom_original.tooltip_markup = Granite.markup_accel_tooltip (
+            { Resources.ACTUAL_SIZE_ACCEL }, 
+             Resources.ACTUAL_SIZE_TOOLTIP
+        );
         zoom_original.valign = Gtk.Align.CENTER;
         zoom_original.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
         zoom_original.clicked.connect (() => {

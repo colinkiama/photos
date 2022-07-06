@@ -128,9 +128,16 @@ public const string RED_EYE_ACCEL = "<Ctrl>Y";
 
 public const string ADJUST_LABEL = _("Adjust");
 public const string ADJUST_TOOLTIP = _("Adjust the photo's color and tone");
-public const string ADJUST_ACCEL = _"<Ctrl>D";
+public const string ADJUST_ACCEL = "<Ctrl>D";
 
-// TODO: Add ZOOM_FIT and ZOOM_ORIGINAL Tooltip and Accel here
+public const string BEST_FIT_TOOLTIP = _("Zoom to fit page");
+public const string BEST_FIT_ACCEL = _("<Ctrl>0");
+
+public const string ACTUAL_SIZE_TOOLTIP = _("Zoom 1:1");
+public const string ACTUAL_SIZE_ACCEL = _("<Ctrl>1");
+
+// public const string MAX_SIZE_TOOLTIP = _("Maximum zoom");
+public const string MAX_SIZE_ACCEL = _("<Ctrl>2");
 
 public const string REVERT_MENU = _("Re_vert to Original");
 public const string REVERT_LABEL = _("Revert to Original");

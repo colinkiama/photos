@@ -124,9 +124,11 @@ public const string STRAIGHTEN_ACCEL = "<Ctrl>A";
 
 public const string RED_EYE_LABEL = _("Red-eye");
 public const string RED_EYE_TOOLTIP = _("Reduce or eliminate any red-eye effects in the photo");
+public const string RED_EYE_ACCEL = "<Ctrl>Y";
 
 public const string ADJUST_LABEL = _("Adjust");
 public const string ADJUST_TOOLTIP = _("Adjust the photo's color and tone");
+public const string ADJUST_ACCEL = _"<Ctrl>D";
 
 public const string REVERT_MENU = _("Re_vert to Original");
 public const string REVERT_LABEL = _("Revert to Original");

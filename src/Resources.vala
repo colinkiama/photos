@@ -116,6 +116,7 @@ public const string PASTE_ADJUSTMENTS_TOOLTIP = _("Apply copied color adjustment
 
 public const string CROP_LABEL = _("Crop");
 public const string CROP_TOOLTIP = _("Crop the photo's size");
+public const string CROP_ACCEL = "<Ctrl>O";
 
 public const string STRAIGHTEN_LABEL = _("Straighten");
 public const string STRAIGHTEN_TOOLTIP = _("Straighten the photo");

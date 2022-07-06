@@ -113,7 +113,10 @@ public abstract class EditingHostPage : SinglePhotoPage {
 
         crop_button = new Gtk.ToggleButton ();
         crop_button.image = new Gtk.Image.from_icon_name ("image-crop", Gtk.IconSize.LARGE_TOOLBAR);
-        crop_button.tooltip_text = Resources.CROP_TOOLTIP;
+        crop_button.tooltip_markup = Granite.markup_accel_tooltip (
+            { Resources.CROP_ACCEL },
+            Resources.CROP_TOOLTIP
+        );
         crop_button.toggled.connect (on_crop_toggled);
 
         straighten_button = new Gtk.ToggleButton ();

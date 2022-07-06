@@ -130,6 +130,8 @@ public const string ADJUST_LABEL = _("Adjust");
 public const string ADJUST_TOOLTIP = _("Adjust the photo's color and tone");
 public const string ADJUST_ACCEL = _"<Ctrl>D";
 
+// TODO: Add ZOOM_FIT and ZOOM_ORIGINAL Tooltip and Accel here
+
 public const string REVERT_MENU = _("Re_vert to Original");
 public const string REVERT_LABEL = _("Revert to Original");
 
